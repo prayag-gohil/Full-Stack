@@ -8,6 +8,7 @@ import Footer from "./Footer.jsx";
 import User from "./User.jsx";
 import Login from "./auth.jsx";
 import Registration from "./Registration.jsx";
+import Loop from "./Loop.jsx";
 
 let name = "prayag";
 
@@ -31,6 +32,7 @@ function App() {
       />
 
       <Registration/>
+      <Loop/>
     </>
   );
 }
