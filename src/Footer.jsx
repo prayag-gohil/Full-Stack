@@ -169,7 +169,7 @@ export default function Footer() {
         <label>Increment Count: {count}</label>
         <br />
         <label>Decrement Count: {count-1}</label>
-        <p>hello</p>
+        
       </div>
     </>
   );
