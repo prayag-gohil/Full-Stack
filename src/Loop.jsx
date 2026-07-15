@@ -5,7 +5,6 @@ export default function Loop()
 {
  //array
 const user=["abc","xyz","jkl","pqr","lmn"];
-
 const [search, setSearch] = useState("");
 //filtering data using filter method 
 //filtering array of object based on condition
