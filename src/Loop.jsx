@@ -21,9 +21,6 @@ const filtered = useMemo(() =>{
 },[search]);
     return(
         <>
-
-        
-    
          <ol>
             {user.map((element,index)=>(
                 <li key={index}>{element}</li>
