@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-
+import  Button  from 'react-bootstrap/Button';
 export default function Effect_Hook()
 {
     //state variable
@@ -43,13 +43,13 @@ export default function Effect_Hook()
         <>
             <h1>useEffect Example</h1>
             <p>Count: {count}</p>
-            <button onClick={increment}>Increment</button>
+            <Button onClick={increment}>Increment</Button>
 
-            <button onClick={decrement}>stock</button>
+            <Button onClick={decrement}>stock</Button>
             <p>Stock: {stock}</p>
 
-            <button onClick={()=>mount()}>Mount</button>
-            <button onClick={()=>unmount()}>Unmount</button>
+            <Button onClick={()=>mount()}>Mount</Button>
+            <Button onClick={()=>unmount()}>Unmount</Button>
         </>
     )
 }
