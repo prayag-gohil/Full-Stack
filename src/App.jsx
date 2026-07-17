@@ -2,27 +2,28 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import './App.css'*/
+import './App.css'
 import { useState } from "react";
 import Footer from "./Footer.jsx";
 import User from "./User.jsx";
 import Login from "./auth.jsx";
 import Registration from "./Registration.jsx";
 import Loop from "./Loop.jsx";
-import Effect_Hook from "./Effect_Hook.jsx";
+import Effect_Hook from "./Effect_Hook.jsx";*/
+import Loginpage from "./Loginpage.jsx";
 
-let name = "prayag";
+//let name = "prayag";
 
-let age = 20;
-let hobbies = ["reading", "editing", "traveling"];
+//let age = 20;
+//let hobbies = ["reading", "editing", "traveling"];
 
 function App() {
-  const [status, setStatus] = useState(false);
-  const [username, setUsername] = useState("");
+  //const [status, setStatus] = useState(false);
+  //const [username, setUsername] = useState("");
 
   return (
     <>
-      <Footer />
+     {/* <Footer />
       <User name={name} age={age} hobbies={hobbies} />
                                                                                                             
       <Login
@@ -34,7 +35,8 @@ function App() {
 
       <Registration/>
       <Loop/>
-      <Effect_Hook/>
+      <Effect_Hook/> */}
+     <Loginpage/>
     </>
   );
 }
