@@ -47,6 +47,9 @@ export default function Effect_Hook()
 
             <button onClick={decrement}>stock</button>
             <p>Stock: {stock}</p>
+
+            <button onClick={()=>mount()}>Mount</button>
+            <button onClick={()=>unmount()}>Unmount</button>
         </>
     )
 }
