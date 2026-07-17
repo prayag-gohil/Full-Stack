@@ -15,10 +15,30 @@ export default function Effect_Hook()
     function display(){
         console.log("useEffect Example");
     }
+
+    function mount(){
+        console.log("Component is mounted");
+    }
+
+    function unmount(){
+        console.log("Component is unmounted");
+    }
     useEffect(()=>{
         display();
     },[count,stock]);
     //display();
+
+    //when component is mounted
+    useEffect(()=>{
+        mount();
+    },[]);
+
+    //when component is unmounted
+    useEffect(()=>{
+        return()=>{
+            unmount();
+        }
+    },[]);
     return(
         <>
             <h1>useEffect Example</h1>
