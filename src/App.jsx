@@ -9,8 +9,9 @@ import User from "./User.jsx";
 import Login from "./auth.jsx";
 import Registration from "./Registration.jsx";
 import Loop from "./Loop.jsx";
-import Effect_Hook from "./Effect_Hook.jsx";*/
-import Loginpage from "./Loginpage.jsx";
+import Effect_Hook from "./Effect_Hook.jsx";
+import Loginpage from "./Loginpage.jsx";*/
+import Headers from "./Header.jsx";
 
 //let name = "prayag";
 
@@ -35,8 +36,9 @@ function App() {
 
       <Registration/>
       <Loop/>
-      <Effect_Hook/> */}
-     <Loginpage/>
+      <Effect_Hook/> 
+     <Loginpage/>*/}
+     <Headers/>
     </>
   );
 }
