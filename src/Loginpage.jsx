@@ -1,25 +1,52 @@
-import  Button  from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Card from "react-bootstrap/Card";
 export default function Loginpage() {
   return (
     <>
     
-      <div>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Menu</a>
-            <a class="navbar-brand" href="#">About</a>
-            <a class="navbar-brand" href="#">Contact</a>
-        </nav>
-        <div class="bg-primary text-white p-3">
-        <h1>Login Page</h1>
-        <label htmlFor="username">Username:</label>
-        <input type="text" id="username" placeholder='Username' />
-        <br /><br />
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" placeholder='Password' />
-        <br /><br />
-        <Button class="btn btn-warning">Login</Button>
-        </div>
-      </div>
+     <Navbar bg="dark" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand href="#">My Website</Navbar.Brand>
+
+          <Nav className="ms-auto">
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#">Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <Container className="d-flex justify-content-center align-items-center vh-100">
+        <Card className="shadow p-4" style={{ width: "400px" }}>
+          <h2 className="text-center text-primary mb-4">Login Page</h2>
+
+          <Form>
+            <Form.Group className="mb-3">
+              <Form.Label>Username</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Username"
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password" 
+                placeholder="Enter Password"/>
+            </Form.Group>
+
+            <div className="d-grid">
+              <Button variant="warning" size="lg">
+                Login
+              </Button>
+            </div>
+          </Form>
+        </Card>
+      </Container>
      {/* 
     <ul  role="list" class="list-disc marker:text-sky-400 ...">
   <li class="font-sans">5 cups chopped Porcini mushrooms</li>

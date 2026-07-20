@@ -10,9 +10,9 @@ import Login from "./auth.jsx";
 import Registration from "./Registration.jsx";
 import Loop from "./Loop.jsx";
 import Effect_Hook from "./Effect_Hook.jsx";
-import Loginpage from "./Loginpage.jsx";*/
 import Headers from "./Header.jsx";
-
+import Loginpage from "./Loginpage.jsx";*/
+import StudentRegistration from "./StudentRegistration.jsx";
 //let name = "prayag";
 
 //let age = 20;
@@ -36,9 +36,11 @@ function App() {
 
       <Registration/>
       <Loop/>
+     <Loginpage/>
       <Effect_Hook/> 
-     <Loginpage/>*/}
      <Headers/>
+     <Loginpage/>*/}
+     <StudentRegistration/>
     </>
   );
 }
