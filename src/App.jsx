@@ -10,11 +10,12 @@ import Login from "./auth.jsx";
 import Registration from "./Registration.jsx";
 import Loop from "./Loop.jsx";
 import Effect_Hook from "./Effect_Hook.jsx";
-import Headers from "./Header.jsx";
-import Loginpage from "./Loginpage.jsx";*/
-import StudentRegistration from "./StudentRegistration.jsx";
-//let name = "prayag";
 
+import Loginpage from "./Loginpage.jsx";*/
+//import StudentRegistration from "./StudentRegistration.jsx";
+//let name = "prayag";
+import Headers from "./Header.jsx";
+import Section from "./Section.jsx";
 //let age = 20;
 //let hobbies = ["reading", "editing", "traveling"];
 
@@ -38,9 +39,10 @@ function App() {
       <Loop/>
      <Loginpage/>
       <Effect_Hook/> 
+     <Loginpage/>
+     <StudentRegistration/>*/}
      <Headers/>
-     <Loginpage/>*/}
-     <StudentRegistration/>
+     <Section/>
     </>
   );
 }

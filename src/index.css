@@ -110,28 +110,22 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+  
   */
-.footer-class
-{
+
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-class {
   background-color: orangered;
 }
-@import "tailwindcss";
+
 @layer components {
   .btn-primary {
-    border-radius: 9999px; /* Fully rounded */
-    background-color: var(--color-blue-500);
-    padding-inline: --spacing(5);
-    padding-block: --spacing(2);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-white);
-    box-shadow: var(--shadow-md);
-    transition: background-color 0.2s ease;
-
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-600);
-      }
-    }
+    @apply bg-blue-600 text-white rounded-full px-5 py-2 hover:bg-blue-700;
   }
 }
-
